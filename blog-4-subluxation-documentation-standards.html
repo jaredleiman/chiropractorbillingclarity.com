@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subluxation Documentation Standards for Medicare: What Your SOAP Notes Must Include</title>
+<meta name="description" content="Medicare requires specific subluxation documentation on every chiropractic claim. Learn what your SOAP notes must include to meet Medicare's subluxation documentation standards and survive an audit.">
+<meta name="keywords" content="subluxation documentation Medicare, chiropractic subluxation documentation standards, Medicare chiropractic SOAP notes, subluxation Medicare requirements, chiropractic Medicare documentation">
+<link rel="canonical" href="https://chiropractorbillingclarity.com/blog/subluxation-documentation-standards-medicare/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --black: #080808; --charcoal: #181818; --steel: #242424; --border: #2c2c2c; --muted: #505050; --mid: #888; --light: #ccc; --white: #F6F3ED; --gold: #C8922A; --red: #B03020; --font-display: 'Playfair Display', Georgia, serif; --font-body: 'DM Sans', sans-serif; --font-mono: 'DM Mono', monospace; }
+body { background: var(--black); color: var(--white); font-family: var(--font-body); font-weight: 300; line-height: 1.7; }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(8,8,8,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); height: 64px; padding: 0 52px; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--white); text-decoration: none; }
+.nav-logo span { color: var(--gold); }
+.nav-cta { background: var(--gold); color: var(--black); font-family: var(--font-mono); font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 11px 22px; text-decoration: none; }
+.nav-cta:hover { background: #E8B84B; }
+.hero-img { margin-top: 64px; position: relative; height: 480px; overflow: hidden; }
+.hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; filter: saturate(0.45) contrast(1.1) brightness(0.55); }
+.hero-img::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent 40%, var(--black) 100%); }
+.hero-img-text { position: absolute; bottom: 48px; left: 64px; right: 64px; z-index: 2; }
+.post-tag { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.hero-img-text h1 { font-family: var(--font-display); font-size: clamp(28px, 3.5vw, 50px); font-weight: 900; line-height: 1.05; color: var(--white); max-width: 800px; }
+.article-wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 120px; }
+.post-meta { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 48px; display: flex; gap: 24px; flex-wrap: wrap; }
+h2 { font-family: var(--font-display); font-size: clamp(24px, 3vw, 36px); font-weight: 700; color: var(--white); margin: 52px 0 20px; line-height: 1.15; }
+h3 { font-family: var(--font-display); font-size: 22px; font-weight: 700; color: var(--white); margin: 36px 0 14px; }
+p { font-size: 17px; color: var(--light); margin-bottom: 22px; line-height: 1.75; }
+ul, ol { margin: 0 0 24px 24px; }
+li { font-size: 16px; color: var(--light); margin-bottom: 10px; line-height: 1.65; }
+strong { color: var(--white); font-weight: 500; }
+.callout { border-left: 3px solid var(--gold); padding: 20px 28px; background: rgba(200,146,42,0.08); margin: 36px 0; }
+.callout p { margin: 0; font-size: 15px; }
+.callout strong { color: var(--gold); }
+.alert-box { border-left: 3px solid var(--red); padding: 20px 28px; background: rgba(176,48,32,0.08); margin: 36px 0; }
+.alert-box p { margin: 0; font-size: 15px; }
+.inline-img { margin: 48px 0; border: 1px solid var(--border); overflow: hidden; }
+.inline-img img { width: 100%; height: 320px; object-fit: cover; filter: saturate(0.55) contrast(1.1) brightness(0.75); }
+.inline-img figcaption { padding: 12px 20px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); background: var(--charcoal); }
+.example-block { background: var(--charcoal); border: 1px solid var(--border); padding: 28px 32px; margin: 32px 0; }
+.example-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+.example-bad { border-left: 3px solid var(--red); padding-left: 16px; }
+.example-good { border-left: 3px solid #2ecc71; padding-left: 16px; }
+.example-block p { font-size: 14px; color: var(--light); margin: 0; font-style: italic; line-height: 1.6; }
+.cta-block { background: var(--charcoal); border: 1px solid var(--border); border-top: 3px solid var(--gold); padding: 48px 40px; margin: 64px 0; text-align: center; }
+.cta-block h3 { margin: 0 0 16px; font-size: 28px; }
+.cta-block p { margin: 0 0 32px; font-size: 15px; }
+.btn { display: inline-block; background: var(--gold); color: var(--black); font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; padding: 18px 36px; text-decoration: none; }
+.btn:hover { background: #E8B84B; }
+footer { background: #0f0f0f; border-top: 1px solid var(--border); padding: 40px 52px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.footer-logo { font-family: var(--font-display); font-size: 14px; font-weight: 700; color: var(--muted); }
+.footer-logo span { color: var(--gold); }
+.footer-disclaimer { font-size: 11px; color: #333; padding: 16px 52px; border-top: 1px solid #181818; }
+@media(max-width:768px) { nav { padding: 0 20px; } .hero-img-text { left: 24px; right: 24px; bottom: 32px; } .article-wrap { padding: 48px 20px 80px; } footer { padding: 32px 20px; } .footer-disclaimer { padding: 16px 20px; } .cta-block { padding: 36px 24px; } }
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">Chiropractor<span>Billing</span>Clarity</a>
+  <a href="https://buy.stripe.com/9B6bJ14LbdG39iy3S3eIw0i" class="nav-cta">Start $247/mo →</a>
+</nav>
+
+<div class="hero-img">
+  <img
+    src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=1400&q=80&auto=format&fit=crop"
+    alt="Chiropractic spinal examination and subluxation assessment — Medicare subluxation documentation standards for billing compliance"
+    width="1400" height="600"
+  >
+  <div class="hero-img-text">
+    <div class="post-tag">Documentation Guide</div>
+    <h1>Subluxation Documentation Standards for Medicare: What Your SOAP Notes Must Include</h1>
+  </div>
+</div>
+
+<article class="article-wrap">
+  <div class="post-meta">
+    <span>April 2026</span>
+    <span>8 min read</span>
+    <span>Documentation · Medicare</span>
+  </div>
+
+  <p>Medicare covers chiropractic services for one purpose: the treatment of subluxation. No subluxation, no coverage. And critically — no documented subluxation, no coverage, even if the subluxation existed and you treated it.</p>
+
+  <p>Subluxation documentation is the foundation of every Medicare chiropractic claim. Get it right, and your claims are defensible. Get it wrong — even if you're providing excellent clinical care — and you're exposed to denials, audits, and recoupment demands.</p>
+
+  <p>This guide covers exactly what Medicare requires for subluxation documentation, the most common documentation gaps that trigger audits, and concrete examples of what passing and failing documentation looks like.</p>
+
+  <h2>What Medicare Means by "Subluxation"</h2>
+
+  <p>For Medicare billing purposes, a subluxation is defined as a motion segment in which alignment, movement integrity, and/or physiological function are altered, although contact between joint surfaces remains intact. In plain English: the vertebra is misaligned or restricted in its movement, affecting the nervous system — but not fully dislocated.</p>
+
+  <p>Medicare requires that subluxation be demonstrated by one of two methods:</p>
+  <ul>
+    <li><strong>X-ray evidence</strong> — Radiographic documentation of the subluxation</li>
+    <li><strong>Physical examination</strong> — Clinical findings that demonstrate the subluxation</li>
+  </ul>
+
+  <p>Most practices rely on physical examination findings. That's fine — but those findings have to be documented in sufficient detail to establish the subluxation's existence, location, and clinical significance.</p>
+
+  <h2>The Four Required Elements of Subluxation Documentation</h2>
+
+  <figure class="inline-img">
+    <img
+      src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=900&q=80&auto=format&fit=crop"
+      alt="Chiropractic examination and subluxation documentation — Medicare SOAP note requirements for chiropractic billing compliance"
+      width="900" height="400"
+      loading="lazy"
+    >
+    <figcaption>Subluxation documentation must include four specific elements to meet Medicare standards</figcaption>
+  </figure>
+
+  <p>Medicare's documentation framework for subluxation requires four elements, often remembered by the acronym <strong>PART</strong>:</p>
+
+  <h3>P — Pain/Tenderness</h3>
+  <p>Document the location, quality, and intensity of pain or tenderness. This should be specific to the subluxation level — not just "patient has back pain," but "patient has tenderness to palpation at L4-L5 with associated muscle guarding."</p>
+
+  <h3>A — Asymmetry/Misalignment</h3>
+  <p>Document observable or palpable asymmetry at the subluxation level. This could be postural asymmetry, vertebral malposition, or restriction in spinal movement pattern. Be specific about the vertebral level and the nature of the asymmetry.</p>
+
+  <h3>R — Range of Motion Abnormality</h3>
+  <p>Document restricted range of motion, either globally or segmentally. Ideally, include measurements or comparison to normal values. "Lumbar flexion 30 degrees, restricted, with pain" is better than "limited lumbar ROM."</p>
+
+  <h3>T — Tissue Changes</h3>
+  <p>Document soft tissue changes at the subluxation level — muscle spasm, hypertonicity, edema, or temperature change. These objective findings support the presence of an active subluxation requiring treatment.</p>
+
+  <div class="callout">
+    <p><strong>Important:</strong> You don't need all four PART elements documented for every visit. But you need enough objective findings to establish that a subluxation exists at the documented level and is causing clinically significant findings. The more elements you document, the stronger your claim.</p>
+  </div>
+
+  <h2>What Good vs. Poor Subluxation Documentation Looks Like</h2>
+
+  <p>The difference between documentation that survives an audit and documentation that doesn't often comes down to specificity. Here are examples for comparison:</p>
+
+  <div class="example-block">
+    <div class="example-label">❌ Poor — Will Not Survive Audit</div>
+    <div class="example-bad">
+      <p>"Patient presents with low back pain. Adjustment performed at lumbar spine. Patient tolerated well. Follow up next week."</p>
+    </div>
+  </div>
+
+  <div class="example-block">
+    <div class="example-label">✅ Strong — Audit Defensible</div>
+    <div class="example-good">
+      <p>"Patient presents with L4-L5 subluxation complex. Objective findings: tenderness to palpation at L4-L5 bilateral, muscle hypertonicity L4-S1 paraspinals, lumbar flexion 35 degrees (restricted, norm 60), lateral bending right 15 degrees (restricted). Patient reports functional limitation: unable to sit more than 20 minutes without significant pain, affecting ability to work at desk. Improvement since last visit: lumbar flexion increased from 25 degrees, patient reports able to sleep through the night (previously waking 2-3x). AT modifier supported: patient showing active functional improvement. HVLA adjustment performed L4-L5 with good cavitation response. Post-adjustment ROM: lumbar flexion 45 degrees."</p>
+    </div>
+  </div>
+
+  <p>The difference is dramatic — but it doesn't require dramatically more time to write. It requires a documentation habit that captures the right elements on every visit.</p>
+
+  <h2>Subluxation Level Documentation: Common Errors</h2>
+
+  <h3>Documenting the region instead of the level</h3>
+  <p>"Lumbar subluxation" is not sufficient. Medicare requires documentation of the specific vertebral level — "L4-L5 subluxation" or "L3 vertebral subluxation." If you treat the cervical, thoracic, and lumbar spine in a single visit and bill 98941, you need subluxation documented at a specific level in each of the three regions.</p>
+
+  <h3>Documenting the symptom but not the finding</h3>
+  <p>"Patient complains of neck pain" is a symptom, not a clinical finding. Medicare needs objective findings — what you found on examination, not what the patient reported. Patient-reported symptoms support the clinical picture but don't substitute for objective examination findings.</p>
+
+  <h3>Failing to connect subluxation to functional limitation</h3>
+  <p>Medicare's coverage is predicated on the subluxation causing a functional problem. A documented subluxation that causes no functional limitation is harder to defend as requiring active/corrective care. Connect the subluxation to what the patient can't do.</p>
+
+  <figure class="inline-img">
+    <img
+      src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=900&q=80&auto=format&fit=crop"
+      alt="Chiropractor consulting with patient about subluxation findings — Medicare documentation requirements for chiropractic compliance"
+      width="900" height="400"
+      loading="lazy"
+    >
+    <figcaption>Connecting subluxation findings to patient functional limitations is essential for Medicare compliance</figcaption>
+  </figure>
+
+  <h2>Updating Subluxation Documentation Over Time</h2>
+
+  <p>One of the most common audit findings in long-term Medicare chiropractic patients is documentation that doesn't change over time. If your subluxation documentation looks identical at visit 30 as it did at visit 1 — same level, same findings, same language — auditors will question whether you're documenting actual clinical assessment or just copying forward.</p>
+
+  <p>As treatment progresses, your documentation should reflect clinical change:</p>
+  <ul>
+    <li>ROM measurements should change (ideally improve) over time</li>
+    <li>Muscle spasm findings should evolve — worsening or improving</li>
+    <li>The patient's functional status should change</li>
+    <li>If findings are stable over many visits, document why active care is still appropriate</li>
+  </ul>
+
+  <h2>Building Better Subluxation Documentation Into Your EHR</h2>
+
+  <p>The most effective way to ensure consistent subluxation documentation is to build it into your EHR template. Every Medicare visit template should have required fields or prompts for:</p>
+  <ul>
+    <li>Specific subluxation level(s) — not just region</li>
+    <li>Objective findings at each level (tenderness, ROM, muscle tone)</li>
+    <li>Functional limitation statement</li>
+    <li>Comparison to previous visit findings</li>
+    <li>Treatment rationale / AT modifier support</li>
+  </ul>
+
+  <p>If your current EHR template doesn't include these fields, modify it. The time investment of updating your template once is far less than the time investment of an audit response — or the financial impact of a recoupment demand.</p>
+
+  <div class="cta-block">
+    <h3>Subluxation Standards Change. Stay Current.</h3>
+    <p>MAC Local Coverage Determinations for chiropractic subluxation documentation are updated periodically. ChiropractorBillingClarity monitors every LCD update and delivers a monthly brief covering exactly what your MAC currently requires.</p>
+    <a href="https://buy.stripe.com/9B6bJ14LbdG39iy3S3eIw0i" class="btn">Start for $247/month →</a>
+  </div>
+
+  <h2>The Bottom Line</h2>
+
+  <p>Subluxation documentation is the foundation of Medicare chiropractic billing compliance. Every claim depends on it. The documentation standard isn't unreasonably high — it requires specificity, objectivity, and consistent connection to functional outcomes. But it does require discipline and a documentation workflow designed to capture the right elements every visit.</p>
+
+  <p>Audit your current SOAP notes against the PART framework. Build better templates. Document improvement specifically and consistently. That's how you make subluxation documentation an asset rather than a liability in any audit.</p>
+</article>
+
+<footer>
+  <div class="footer-logo">Chiropractor<span>Billing</span>Clarity</div>
+  <div style="font-family:'DM Mono',monospace;font-size:10px;color:#505050;">© 2026 Digital Services USA</div>
+</footer>
+<div class="footer-disclaimer">
+  This article is for educational purposes only and does not constitute legal advice. Consult a qualified healthcare attorney for guidance on specific compliance matters. ChiropractorBillingClarity.com is not affiliated with CMS or the OIG.
+</div>
+</body>
+</html>
